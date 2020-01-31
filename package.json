@@ -1,0 +1,36 @@
+{
+  "name": "piral-cli-dotenv",
+  "version": "0.1.0",
+  "description": "Extends the Piral CLI command options to include dotenv files.",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FlorianRappl/piral-cli-dotenv.git"
+  },
+  "keywords": [
+    "piral-cli",
+    "piral",
+    "plugin",
+    "dotenv",
+    "command"
+  ],
+  "author": "Florian Rappl <mail@florian-rappl.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FlorianRappl/piral-cli-dotenv/issues"
+  },
+  "homepage": "https://github.com/FlorianRappl/piral-cli-dotenv#readme",
+  "devDependencies": {
+    "@types/node": "^13.5.3",
+    "@types/yargs": "^15.0.2",
+    "piral-cli": "^0.9.9"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
