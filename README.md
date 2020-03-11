@@ -1,5 +1,7 @@
 # piral-cli-dotenv
 
+![Azure Build Status](https://dev.azure.com/FlorianRappl/piral-cli-plugins/_apis/build/status/FlorianRappl.piral-cli-dotenv?branchName=master) ![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)
+
 Plugin for the `piral-cli`. Adds a flag to include environment variables from .env files.
 
 Extends the Piral CLI command options to include dotenv files.
