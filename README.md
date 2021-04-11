@@ -2,7 +2,7 @@
 
 ![Azure Build Status](https://dev.azure.com/FlorianRappl/piral-cli-plugins/_apis/build/status/FlorianRappl.piral-cli-dotenv?branchName=master) ![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)
 
-Plugin for the `piral-cli`. Adds a flag to include environment variables from .env files.
+Plugin for the `piral-cli`. Adds a flag to include environment variables from *.env* files.
 
 Extends the Piral CLI command options to include dotenv files.
 
@@ -96,6 +96,16 @@ Example call:
 ```sh
 piral build <regular options> --env SERVICE_URL="http://example.com"
 ```
+
+## FAQ
+
+### Does it work with every bundler?
+
+It should work with `piral-cli-webpack`, `piral-cli-webpack5`, and `piral-cli-parcel`. Other bundlers are not tested.
+
+### Are some environment variables overwritten?
+
+Yes. Some variables are special (e.g., `NODE_ENV`) and will be set by the `piral-cli` anyway. This plugin focuses on non-special variables.
 
 ## License
 

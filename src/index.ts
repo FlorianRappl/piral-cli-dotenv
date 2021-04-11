@@ -38,7 +38,7 @@ const plugin: CliPlugin = cli => {
           const paths = [e, `.env.${e}`, `${e}.env`];
 
           for (const path of paths) {
-            if (existsSync(e)) {
+            if (existsSync(path)) {
               config({
                 path,
               });
