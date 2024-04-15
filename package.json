@@ -1,6 +1,6 @@
 {
   "name": "piral-cli-dotenv",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Extends the Piral CLI command options to include dotenv files.",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
