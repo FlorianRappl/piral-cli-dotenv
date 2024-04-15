@@ -26,14 +26,14 @@
   },
   "homepage": "https://github.com/FlorianRappl/piral-cli-dotenv#readme",
   "devDependencies": {
-    "@types/node": "^13.13.48",
-    "@types/yargs": "^15.0.13",
-    "piral-cli": "latest"
+    "@types/node": "^16",
+    "@types/yargs": "^16",
+    "piral-cli": "1.5.3"
   },
   "peerDependencies": {
     "piral-cli": "*"
   },
   "dependencies": {
-    "dotenv": "^8.2.0"
+    "dotenv": "^16"
   }
 }

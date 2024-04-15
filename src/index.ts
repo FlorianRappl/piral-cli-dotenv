@@ -2,7 +2,7 @@ import { existsSync } from 'fs';
 import { CliPlugin } from 'piral-cli';
 import { config, parse } from 'dotenv';
 
-const plugin: CliPlugin = cli => {
+const plugin: CliPlugin = (cli) => {
   // these commands are supported
   const commands = [
     'build-piral',
@@ -14,15 +14,12 @@ const plugin: CliPlugin = cli => {
     'validate-pilet',
   ];
 
-  commands.forEach(command => {
-    cli.withFlags(command, flags =>
-      flags
-        .string('env')
-        .describe('env', 'Sets the environment variables.')
-        .default('env', undefined),
+  commands.forEach((command) => {
+    cli.withFlags(command, (flags) =>
+      flags.string('env').describe('env', 'Sets the environment variables.').default('env', undefined),
     );
 
-    cli.beforeCommand(command, args => {
+    cli.beforeCommand(command, (args) => {
       const e = args.env;
 
       if (typeof e === 'string') {
@@ -33,7 +30,7 @@ const plugin: CliPlugin = cli => {
           const lines = e.split(';').join('\n');
           const values = parse(lines);
 
-          Object.keys(values).forEach(key => (process.env[key] = values[key]));
+          Object.keys(values).forEach((key) => (process.env[key] = values[key]));
         } else {
           const paths = [e, `.env.${e}`, `${e}.env`];
 

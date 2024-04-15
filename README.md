@@ -1,6 +1,6 @@
 # piral-cli-dotenv
 
-![Azure Build Status](https://dev.azure.com/FlorianRappl/piral-cli-plugins/_apis/build/status/FlorianRappl.piral-cli-dotenv?branchName=master) ![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Azure Build Status](https://dev.azure.com/FlorianRappl/piral-cli-plugins/_apis/build/status/FlorianRappl.piral-cli-dotenv?branchName=main) ![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)
 
 Plugin for the `piral-cli`. Adds a flag to include environment variables from *.env* files.
 
@@ -101,7 +101,7 @@ piral build <regular options> --env SERVICE_URL="http://example.com"
 
 ### Does it work with every bundler?
 
-It should work with `piral-cli-webpack`, `piral-cli-webpack5`, and `piral-cli-parcel`. Other bundlers are not tested.
+It should. It was tested with `piral-cli-webpack5` only. The `piral-cli-parcel2` bundler is presumably not working as they treat environment variables differently. Other bundlers are not tested.
 
 ### Are some environment variables overwritten?
 
