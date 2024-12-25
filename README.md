@@ -101,7 +101,7 @@ piral build <regular options> --env SERVICE_URL="http://example.com"
 
 ### Does it work with every bundler?
 
-It should. It was tested with `piral-cli-webpack5` only. The `piral-cli-parcel2` bundler is presumably not working as they treat environment variables differently. Other bundlers are not tested.
+Yes.
 
 ### Are some environment variables overwritten?
 
@@ -109,4 +109,4 @@ Yes. Some variables are special (e.g., `NODE_ENV`) and will be set by the `piral
 
 ## License
 
-This plugin is released using the MIT license. For more information see the [LICENSE file](LICENSE).
+This plugin is released using the MIT license. For more information see the [LICENSE file](./LICENSE).
